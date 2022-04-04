@@ -17,7 +17,7 @@
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
   <Registry>https://hub.docker.com/r/xavierniu/cloudreve</Registry>
   <GitHub>https://github.com/cloudreve/Cloudreve</GitHub>
-  <Repository>xavierniu/cloudreve:latest</Repository>
+  <Repository>docker.mirrors.ustc.edu.cn/xavierniu/cloudreve:latest</Repository>
   <Project>https://docs.cloudreve.org/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -29,15 +29,12 @@
   <Config Name="上传目录" Target="/cloudreve/uploads" Default="" 
     Mode="rw" Description="该目录将映射到容器中的 /cloudreve/uploads，作为上传目录" Type="Path" 
     Display="always" Required="false" Mask="false">/mnt/user/Docker/cloudreve/sync</Config>
-  <Config Name="临时目录" Target="/temp" Default="" 
-    Mode="rw" Description="该目录将映射到容器中的 /cloudreve/uploads，作为上传目录" Type="Path" 
-    Display="always" Required="false" Mask="false">/mnt/user/Docker/cloudreve/temp</Config>
-  <Config Name="数据文件" Target="/cloudreve/cloudreve.db" Default="" 
-    Mode="rw" Description="该文件将映射到容器中的 /cloudreve/cloudreve.db，用于存储 cloudreve 元数据" Type="Path" 
-    Display="advanced" Required="false" Mask="false">/mnt/user/Docker/cloudreve/db/cloudreve.db</Config>
-  <Config Name="配置文件" Target="/cloudreve/conf.ini" Default="" 
-    Mode="rw" Description="该文件将映射到容器中的 /cloudreve/conf.ini，作为  cloudreve 配置文件" Type="Path" 
-    Display="advanced" Required="false" Mask="false">/mnt/user/Docker/cloudreve/config/conf.ini</Config>
+  <Config Name="数据库目录" Target="/cloudreve/db" Default="" 
+    Mode="rw" Description="该文件将映射到容器中的 /cloudreve/db，用于存储 cloudreve 元数据" Type="Path" 
+    Display="advanced" Required="false" Mask="false">/mnt/user/Docker/cloudreve/db</Config>
+  <Config Name="配置文件" Target="/cloudreve/config" Default="" 
+    Mode="rw" Description="该文件将映射到容器中的 /cloudreve/config，作为  cloudreve 配置文件" Type="Path" 
+    Display="advanced" Required="false" Mask="false">/mnt/user/Docker/cloudreve/config</Config>
   <Config Name="头像目录" Target="/cloudreve/avatar" Default="" 
     Mode="rw" Description="该目录将映射到容器中的 /cloudreve/avatar，用于存储 cloudreve 头像文件" Type="Path" 
     Display="advanced" Required="false" Mask="false">/mnt/user/Docker/cloudreve/avatar</Config>
