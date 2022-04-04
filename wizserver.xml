@@ -16,8 +16,13 @@
     <Icon>https://wcdn.wiz.cn/favicon.ico</Icon>
     <Data>
         <Volume>
-            <HostDir>/mnt/user/appdata/wizserver</HostDir>
+            <HostDir>/mnt/user/Docker/wiznote</HostDir>
             <ContainerDir>/wiz/storage</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/etc/localtime</HostDir>
+            <ContainerDir>/etc/localtime</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
@@ -37,7 +42,7 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>9270</HostPort>
+                <HostPort>9266</HostPort>
                 <ContainerPort>80</ContainerPort>
                 <Protocol>tcp</Protocol>
             </Port>

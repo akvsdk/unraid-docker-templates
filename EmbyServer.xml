@@ -9,8 +9,8 @@
         [b]/config[/b] : this path is used to store Emby's configuration.[br]
         [b]/mnt[/b] : this path is used to add library locations to Emby.[br]
     </Description>
-    <Registry>https://hub.docker.com/r/zishuo/embyserver/</Registry>
-    <Repository>zishuo/embyserver:latest</Repository>
+    <Registry>https://hub.docker.com/r/lovechen/embyserver</Registry>
+    <Repository>lovechen/embyserver:latest</Repository>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
     <Environment>
@@ -39,7 +39,7 @@
     </Networking>
     <Data>
         <Volume>
-            <HostDir>//mnt/user/appdata/emby/</HostDir>
+            <HostDir>/mnt/user/appdata/EmbyServer</HostDir>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>

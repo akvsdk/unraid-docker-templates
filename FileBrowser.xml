@@ -12,7 +12,7 @@
         使用荒野无灯的docker镜像，界面支持中文，默认的管理路径是Unraid的/mnt目录
     </Description>
     <Category>Cloud: Network:Web Status:Stable</Category>
-    <WebUI>http://[IP]:[PORT:8082]</WebUI>
+    <WebUI>http://[IP]:[PORT:8083]</WebUI>
     <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
     <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
     <PostArgs></PostArgs>
@@ -20,7 +20,7 @@
     <Description></Description>
     <Data>
         <Volume>
-            <HostDir>/mnt/user/appdata/filebrowser</HostDir>
+            <HostDir>/mnt/user/Docker/fb</HostDir>
             <ContainerDir>/config</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
@@ -52,7 +52,7 @@
             <Mode/>
         </Variable>
         <Variable>
-            <Value>8082</Value>
+            <Value>8083</Value>
             <Name>WEB_PORT</Name>
             <Mode/>
         </Variable>
