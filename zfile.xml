@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container>
-    <Name>frps</Name>
+    <Name>zfile</Name>
     <Repository>docker.mirrors.ustc.edu.cn/zhaojun1998/zfile</Repository>
     <Registry>https://hub.docker.com/r/zhaojun1998/zfile</Registry>
     <Network>host</Network>
@@ -45,6 +45,7 @@
                 <HostPort>9277</HostPort>
                 <ContainerPort>8080</ContainerPort>
                 <Protocol>tcp</Protocol>
+                <Description>zfile web ui</Description>
             </Port>
         </Publish>
     </Networking>
