@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container>
+    <Name>frps</Name>
+    <Repository>docker.mirrors.ustc.edu.cn/zhaojun1998/zfile</Repository>
+    <Registry>https://hub.docker.com/r/zhaojun1998/zfile</Registry>
+    <Network>host</Network>
+    <Privileged>false</Privileged>
+    <Support>https://docs.zfile.vip/</Support>
+    <Project>https://github.com/zhaojun1998/zfile</Project>
+    <Overview>zfile</Overview>
+    <Description>
+    基于 Java 的在线网盘程序，支持对接 S3、OneDrive、SharePoint、又拍云、本地存储、FTP 等存储源，支持在线浏览图片、播放音视频，文本文件等文件类型。
+    </Description>
+    <Category>Cloud: Network:Web Status:Stable</Category>
+    <WebUI>http://[IP]:[PORT:9277]</WebUI>
+    <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/Docker/zfile/db</HostDir>
+            <ContainerDir>/root/.zfile/db</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/Docker/zfile/logs</HostDir>
+            <ContainerDir>/root/.zfile/logs</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Environment>
+        <Variable>
+            <Value>0</Value>
+            <Name>PUID</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>0</Value>
+            <Name>PGID</Name>
+            <Mode/>
+        </Variable>
+    </Environment>
+</Container>
