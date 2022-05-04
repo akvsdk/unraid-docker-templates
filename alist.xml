@@ -16,7 +16,7 @@
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
   <Registry>https://hub.docker.com/r/xhofe/alist</Registry>
   <GitHub>https://github.com/Alist/Alist</GitHub>
-  <Repository>docker.mirrors.ustc.edu.cn/xhofe/alist:latest</Repository>
+  <Repository>xhofe/alist:latest</Repository>
   <Project>https://github.com/Xhofe/alist</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
