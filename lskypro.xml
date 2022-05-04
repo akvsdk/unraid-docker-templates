@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/akvsdk/unraid-docker-templates/master/lskypro.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <Name>lskypro</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']应用介绍[/span][/u][/b][br]
+    Lsky Pro 是一个用于在线上传、管理图片的图床程序，中文名：兰空图床，你可以将它作为自己的云上相册，亦可以当作你的写作贴图库。[br][br]
+    [b][u][span style='color: #E80000;']文档介绍[/span][/u][/b][br]
+    https://docs.lsky.pro/[br][br]
+  </Description>
+  <Overview>
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Registry>https://hub.docker.com/r/halcyonazure/lsky-pro-docker:latest</Registry>
+  <GitHub>https://github.com/Alist/Alist</GitHub>
+  <Repository>halcyonazure/lsky-pro-docker:latest:latest</Repository>
+  <Project>https://github.com/halcyonazure/lsky-pro-docker:latest</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Config Name="WebUI 端口" Target="5243" Default="80" 
+    Mode="tcp" Description="WebUI 端口，对应容器中的 80 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">5243</Config>
+  <Config Name="图床目录" Target="/var/www/html" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/var/www/html，图片文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/disk1/nas/lsky</Config>
+  <Config Name="用户 ID" Target="PUID" Default="" 
+    Mode="" Description="运行 lskypro 容器的用户" Type="Variable"
+    Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="用户组 ID" Target="GUID" Default="" 
+    Mode="" Description="运行 lskypro 容器的用户组" Type="Variable"
+    Display="advanced" Required="false" Mask="false">0</Config>
+  <Icon>https://docs.lsky.pro/logo.png</Icon>
+  <WebUI>http://[IP]:[PORT:5243]/</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled></DateInstalled>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+</Container>  
