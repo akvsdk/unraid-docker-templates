@@ -21,7 +21,7 @@
   <Privileged>false</Privileged>
   <Network>bridge</Network>
   <Shell>sh</Shell>
-  <Config Name="WebUI 端口" Target="5243" Default="80" 
+  <Config Name="WebUI 端口" Target="80" Default="80" 
     Mode="tcp" Description="WebUI 端口，对应容器中的 80 端口"  Type="Port" 
     Display="always" Required="true" Mask="false">5243</Config>
   <Config Name="图床目录" Target="/var/www/html" Default="" 
