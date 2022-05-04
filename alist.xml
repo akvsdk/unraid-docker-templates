@@ -34,7 +34,7 @@
   <Config Name="用户组 ID" Target="GUID" Default="" 
     Mode="" Description="运行 Alist 容器的用户组" Type="Variable"
     Display="advanced" Required="false" Mask="false">0</Config>
-  <Icon>https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg</Icon>
+  <Icon>https://s2.loli.net/2022/05/04/qsKO3HnTmp7DJdI.png</Icon>
   <WebUI>http://[IP]:[PORT:5244]/</WebUI>
   <PostArgs></PostArgs>
   <CPUset></CPUset>
