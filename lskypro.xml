@@ -21,11 +21,14 @@
   <Privileged>false</Privileged>
   <Network>bridge</Network>
   <Shell>sh</Shell>
-  <Config Name="WebUI 端口" Target="80" Default="80" 
+  <Config Name="WebUI 端口" Target="80" Default="5243" 
     Mode="tcp" Description="WebUI 端口，对应容器中的 80 端口"  Type="Port" 
     Display="always" Required="true" Mask="false">5243</Config>
-  <Config Name="图床目录" Target="/var/www/html" Default="" 
-    Mode="rw" Description="该目录将映射到容器中的/var/www/html，图片文件存放目录" Type="Path" 
+  <Config Name="图床配置" Target="/var/www/html" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/var/www/html，配置文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/Docker/lskypro/config</Config>
+  <Config Name="图床目录" Target="/var/www/html/image" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/var/www/html/image，图片文件存放目录" Type="Path" 
     Display="always" Required="false" Mask="false">/mnt/disk1/nas/lsky</Config>
   <Config Name="用户 ID" Target="PUID" Default="" 
     Mode="" Description="运行 lskypro 容器的用户" Type="Variable"
