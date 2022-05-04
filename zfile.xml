@@ -42,7 +42,7 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>9277</HostPort>
+                <HostPort>9266</HostPort>
                 <ContainerPort>8080</ContainerPort>
                 <Protocol>tcp</Protocol>
                 <Description>zfile web ui</Description>
