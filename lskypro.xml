@@ -15,8 +15,8 @@
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
   <Registry>https://hub.docker.com/r/halcyonazure/lsky-pro-docker:latest</Registry>
   <GitHub>https://github.com/Alist/Alist</GitHub>
-  <Repository>halcyonazure/lsky-pro-docker:latest:latest</Repository>
-  <Project>https://github.com/halcyonazure/lsky-pro-docker:latest</Project>
+  <Repository>halcyonazure/lsky-pro-docker:latest</Repository>
+  <Project>https://github.com/halcyonazure/lsky-pro-docker</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>bridge</Network>
