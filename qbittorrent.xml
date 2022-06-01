@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
     <Name>Qbittorrent</Name>
-    <Repository>docker.mirrors.ustc.edu.cn/80x86/qbittorrent:4.4.3.1-36-minimal-amd64-full</Repository>
+    <Repository>https://hub.docker.com/r/80x86/qbittorrent:4.4.3.1-36-minimal-amd64-full</Repository>
     <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
@@ -44,19 +44,12 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>6082</HostPort>
-                <ContainerPort>6080</ContainerPort>
-                <Protocol>tcp</Protocol>
-            </Port>
-            <Port>
                 <HostPort>8888</HostPort>
                 <ContainerPort>8080</ContainerPort>
-                <Protocol>tcp</Protocol>
             </Port>        
             <Port>
                 <HostPort>8999</HostPort>
                 <ContainerPort>8999</ContainerPort>
-                <Protocol>tcp</Protocol>
             </Port>     
         </Publish>
     </Networking>
