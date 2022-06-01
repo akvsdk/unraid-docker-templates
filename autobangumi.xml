@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/akvsdk/unraid-docker-templates/master/autobangumi.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <Name>qbittorrent</Name>
+  <Description>
+    本项目是基于 Mikan Project、qBittorrent 的全自动追番整理下载工具。只需要在 Mikan Project 上订阅番剧，就可以全自动追番。并且整理完成的名称和目录可以直接被 Plex、Jellyfin 等媒体库软件识别，无需二次刮削。
+  </Description>
+  <Overview>
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Registry>https://hub.docker.com/r/estrellaxd/auto_bangumi:latest</Registry>
+  <Repository>estrellaxd/auto_bangumi:latest</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Config Name="RSS 订阅地址" Target="RSS" Default="https://mikanani.me/RSS/MyBangumi?token=2hLNFtllOHSTM7NPqBltsg%3d%3d" 
+    Mode="" Description="运行容器的用户" Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+   <Config Name="下载路径" Target="/path/downloads" Default="/mnt/user/nas/qb" 
+    Mode="rw" Description="该目录将映射到容器中的/downloads" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
+  <Config Name="qBittorrent的地址和端口号" Target="RSS" Default="qbittorrent:8080" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="qBittorrent的登录用户" Target="USER" Default="admin" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="qBittorrent的登录密码" Target="USER" Default="adminadmin" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="用户 ID" Target="PUID" Default="99" 
+    Mode="" Description="运行容器的用户" Type="Variable"
+    Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="用户组 ID" Target="GUID" Default="100" 
+    Mode="" Description="运行容器的用户组" Type="Variable"
+    Display="advanced" Required="false" Mask="false">100</Config>
+  <Icon>https://s2.loli.net/2022/06/01/QaBVrSX4T97Wit2.png</Icon>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled></DateInstalled>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+</Container>  
