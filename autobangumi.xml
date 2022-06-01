@@ -10,7 +10,7 @@
   <Overview>
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
-  <Registry>https://hub.docker.com/r/estrellaxd/auto_bangumi:latest</Registry>
+  <Registry>https://hub.docker.com/r/estrellaxd/auto_bangumi</Registry>
   <Repository>estrellaxd/auto_bangumi:latest</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
