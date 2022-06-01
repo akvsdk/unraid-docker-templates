@@ -38,7 +38,7 @@
   <Config Name="用户组 ID" Target="GUID" Default="100" 
     Mode="" Description="运行容器的用户组" Type="Variable"
     Display="advanced" Required="false" Mask="false">100</Config>
-  <Icon>https://docs.lsky.pro/logo.png</Icon>
+  <Icon>https://s2.loli.net/2022/06/01/maWtR87pj94oHVM.png</Icon>
   <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <PostArgs></PostArgs>
   <CPUset></CPUset>
