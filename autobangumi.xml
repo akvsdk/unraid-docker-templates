@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/akvsdk/unraid-docker-templates/master/autobangumi.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Cloud: Network:Web Tools:</Category>
-  <Name>qbittorrent</Name>
+  <Name>autobangumi</Name>
   <Description>
     本项目是基于 Mikan Project、qBittorrent 的全自动追番整理下载工具。只需要在 Mikan Project 上订阅番剧，就可以全自动追番。并且整理完成的名称和目录可以直接被 Plex、Jellyfin 等媒体库软件识别，无需二次刮削。
   </Description>
