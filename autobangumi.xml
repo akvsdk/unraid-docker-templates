@@ -20,7 +20,7 @@
     Mode="" Description="运行容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
    <Config Name="下载路径" Target="DOWNLOAD_PATH" Default="/mnt/user/nas/qb" 
-    Mode="" Description="该目录将映射到容器中的/downloads" Type="Path" 
+    Mode="" Description="该目录将映射到容器中的/downloads" Type="Variable" 
     Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
   <Config Name="qBittorrent的地址和端口号" Target="HOST" Default="qbittorrent:8080" 
     Mode=""  Type="Variable"
