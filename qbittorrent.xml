@@ -10,7 +10,7 @@
   <Overview>
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
-  <Registry>https://hub.docker.com/r/80x86/qbittorrent:latest</Registry>
+  <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
   <Repository>80x86/qbittorrent:4.2.2-amd64</Repository>
   <Project>https://github.com/80x86/qbittorrent</Project>
   <BindTime>true</BindTime>

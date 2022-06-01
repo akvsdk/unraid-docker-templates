@@ -19,8 +19,8 @@
   <Config Name="RSS 订阅地址" Target="RSS" Default="https://mikanani.me/RSS/MyBangumi?token=2hLNFtllOHSTM7NPqBltsg%3d%3d" 
     Mode="" Description="运行容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
-   <Config Name="下载路径" Target="/path/downloads" Default="/mnt/user/nas/qb" 
-    Mode="rw" Description="该目录将映射到容器中的/downloads" Type="Path" 
+   <Config Name="下载路径" Target="DOWNLOAD_PATH" Default="/mnt/user/nas/qb" 
+    Mode="" Description="该目录将映射到容器中的/downloads" Type="Path" 
     Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
   <Config Name="qBittorrent的地址和端口号" Target="HOST" Default="qbittorrent:8080" 
     Mode=""  Type="Variable"
