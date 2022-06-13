@@ -17,9 +17,9 @@
   <Privileged>false</Privileged>
   <Network>bridge</Network>
   <Shell>bash</Shell>
-  <Config Name="WebUI 端口" Target="8888" Default="8888" 
-    Mode="tcp" Description="WebUI 端口，对应容器中的 8888 端口"  Type="Port" 
-    Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="WebUI 端口" Target="8989" Default="8989" 
+    Mode="tcp" Description="WebUI 端口，对应容器中的 8989 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">8989</Config>
   <Config Name="BT_PORT" Target="6881" Default="8999" 
     Mode="tcp" Description="6881对应容器中的 8999 端口"  Type="Port" 
     Display="always" Required="true" Mask="false">8999</Config>
@@ -32,7 +32,7 @@
    <Config Name="QB数据" Target="/data" Default="" 
     Mode="rw" Description="该目录将映射到容器中的/data，配置文件存放目录" Type="Path" 
     Display="always" Required="false" Mask="false">/mnt/user/Docker/qbittorrent/data</Config>
-  <Config Name="web访问端口环境变量" Target="QB_WEBUI_PORT" Default="8888" 
+  <Config Name="web访问端口环境变量" Target="QB_WEBUI_PORT" Default="8989" 
     Mode=""  Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="自动更新qBittorrent的trackers,默认开启" Target="QB_TRACKERS_UPDATE_AUTO" Default="true" 
@@ -48,7 +48,7 @@
     Mode="" Description="运行容器的用户组" Type="Variable"
     Display="advanced" Required="false" Mask="false">100</Config>
   <Icon>https://s2.loli.net/2022/06/01/maWtR87pj94oHVM.png</Icon>
-  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8989]/</WebUI>
   <PostArgs></PostArgs>
   <CPUset></CPUset>
   <DateInstalled></DateInstalled>
