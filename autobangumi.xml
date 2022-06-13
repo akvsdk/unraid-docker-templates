@@ -16,19 +16,25 @@
   <Privileged>false</Privileged>
   <Network>bridge</Network>
   <Shell>bash</Shell>
-  <Config Name="RSS 订阅地址" Target="RSS" Default="https://mikanani.me/RSS/MyBangumi?token=2hLNFtllOHSTM7NPqBltsg%3d%3d" 
+  <Config Name="RSS 订阅地址" Target="AB_RSS" Default="https://mikanani.me/RSS/MyBangumi?token=2hLNFtllOHSTM7NPqBltsg%3d%3d" 
     Mode="" Description="运行容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
-   <Config Name="下载路径" Target="DOWNLOAD_PATH" Default="/mnt/user/nas/qb" 
+   <Config Name="下载路径" Target="AB_DOWNLOAD_PATH" Default="/mnt/user/nas/qb" 
     Mode="" Description="该目录将映射到容器中的/downloads" Type="Variable" 
     Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
-  <Config Name="qBittorrent的地址和端口号" Target="HOST" Default="qbittorrent:8080" 
+  <Config Name="qBittorrent的地址和端口号" Target="AB_DOWNLOADER_HOST" Default="qbittorrent:8080" 
     Mode=""  Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
-  <Config Name="qBittorrent的登录用户" Target="USER" Default="admin" 
+  <Config Name="过滤不需要剧集关键字" Target="AB_NOT_CONTAIN" Default="720|繁体|CHT|JPTC|繁日" 
     Mode=""  Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
-  <Config Name="qBittorrent的登录密码" Target="PASSWORD" Default="adminadmin" 
+  <Config Name="时区" Target="TZ" Default="Asia/Shanghai" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="qBittorrent的登录用户" Target="AB_DOWNLOADER_USERNAME" Default="admin" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="qBittorrent的登录密码" Target="AB_DOWNLOADER_PASSWORD" Default="adminadmin" 
     Mode=""  Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="用户 ID" Target="PUID" Default="99" 
