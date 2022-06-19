@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/akvsdk/unraid-docker-templates/master/qbittorrent.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <Name>qbittorrent</Name>
+  <Description>
+    qBittorrent NoX is the headless with remote web interface version of qBittorrent BitTorrent client.   
+  </Description>
+  <Overview>
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Registry>https://hub.docker.com/r/johngong/qbittorrent</Registry>
+  <Repository>johngong/qbittorrent:latest</Repository>
+  <Project>https://github.com/johngong/qbittorrent</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Config Name="WebUI 端口" Target="8989" Default="8989" 
+    Mode="tcp" Description="WebUI 端口，对应容器中的 8989 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">8989</Config>
+  <Config Name="BT_PORT" Target="6881" Default="8999" 
+    Mode="tcp" Description="6881对应容器中的 8999 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">8999</Config>
+  <Config Name="BT_PORT" Target="6881" Default="8999" 
+    Mode="udp" Description="6881对应容器中的 8999 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">8999</Config>
+  <Config Name="QB配置" Target="/config" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/config，配置文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/Docker/qbittorrent/config</Config>
+   <Config Name="QB数据" Target="/data" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/data，配置文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/Docker/qbittorrent/data</Config>
+  <Config Name="web访问端口环境变量" Target="QB_WEBUI_PORT" Default="8989" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="自动更新qBittorrent的trackers,默认开启" Target="QB_TRACKERS_UPDATE_AUTO" Default="true" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+   <Config Name="下载路径" Target="/Downloads" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/Downloads" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
+  <Config Name="用户 ID" Target="PUID" Default="99" 
+    Mode="" Description="运行容器的用户" Type="Variable"
+    Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="用户组 ID" Target="GUID" Default="100" 
+    Mode="" Description="运行容器的用户组" Type="Variable"
+    Display="advanced" Required="false" Mask="false">100</Config>
+  <Icon>https://s2.loli.net/2022/06/01/maWtR87pj94oHVM.png</Icon>
+  <WebUI>http://[IP]:[PORT:8989]/</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled></DateInstalled>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+</Container>  

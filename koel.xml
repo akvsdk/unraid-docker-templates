@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/akvsdk/unraid-docker-templates/master/koel.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <Name>koel</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']应用介绍[/span][/u][/b][br]
+    Koel是一个自己托管自己的音乐的平台[br][br]
+  </Description>
+  <Overview>
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Registry>https://hub.docker.com/r/hyzual/koel:latest</Registry>
+  <GitHub>https://github.com/hyzual/koel</GitHub>
+  <Repository>hyzual/koel:latest</Repository>
+  <Project>https://github.com/hyzual/koel</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Config Name="WebUI 端口" Target="80" Default="5242" 
+    Mode="tcp" Description="WebUI 端口，对应容器中的 80 端口"  Type="Port" 
+    Display="always" Required="true" Mask="false">5242</Config>
+  <Config Name="音乐目录" Target="/music" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/music，音乐文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/user/aliyunwebdav/音乐</Config>
+  <Config Name="图片目录" Target="/var/www/html/public/img/covers" Default="" 
+    Mode="rw" Description="该目录将映射到容器中的/var/www/html/public/img/covers，图片文件存放目录" Type="Path" 
+    Display="always" Required="false" Mask="false">/mnt/disk1/nas/koel/img/covers</Config>
+  <Config Name="https" Target="FORCE_HTTPS" Default="0" 
+    Mode=""  Description="是否强制https" Type="Variable"
+    Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="menory" Target="MEMORY_LIMIT" Default="1024" 
+    Mode="" Description="设置使用内存"  Type="Variable"
+    Display="advanced" Required="false" Mask="false">1</Config>
+  <Config Name="db" Target="DB_CONNECTION" Default="mysql" 
+    Mode="" Description="设置使用数据库类型"  Type="Variable"
+    Display="advanced" Required="false" Mask="false">mysql</Config>
+  <Config Name="db_host" Target="DB_HOST" Default="mariadb" 
+    Mode=""  Description="设置数据库主机" Type="Variable"
+    Display="advanced" Required="false" Mask="false">mariadb</Config>
+  <Config Name="db_username" Target="DB_USERNAME" Default="root" 
+    Mode="" Description="设置数据库用户名"  Type="Variable"
+    Display="advanced" Required="false" Mask="false">root</Config>
+  <Config Name="db_pwd" Description="设置数据库密码"  Target="DB_PASSWORD" Default="" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="db_name" Target="DB_DATABASE" Default="koel" 
+    Mode="" Description="设置数据库名称" Type="Variable"
+    Display="advanced" Required="false" Mask="false">koel</Config>
+  <Config Name="用户 ID" Target="PUID" Default="" 
+    Mode="" Description="运行 koel 容器的用户" Type="Variable"
+    Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="用户组 ID" Target="GUID" Default="" 
+    Mode="" Description="运行 koel 容器的用户组" Type="Variable"
+    Display="advanced" Required="false" Mask="false">0</Config>
+  <Icon>https://s2.loli.net/2022/05/07/bqlYNwDFJOhfxRo.png</Icon>
+  <WebUI>http://[IP]:[PORT:5242]/</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset></CPUset>
+  <DateInstalled></DateInstalled>
+  <DonateText></DonateText>
+  <DonateLink></DonateLink>
+  <DonateImg></DonateImg>
+</Container>  
