@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
     <Name>ddns-go</Name>
-    <Repository>docker.mirrors.ustc.edu.cn/jeessy/ddns-go</Repository>
+    <Repository>jeessy/ddns-go</Repository>
     <Registry>https://hub.docker.com/r/jeessy/ddns-go</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
