@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container>
+    <Name>ddns-go</Name>
+    <Repository>docker.mirrors.ustc.edu.cn/jeessy/ddns-go</Repository>
+    <Registry>https://hub.docker.com/r/jeessy/ddns-go</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/jeessy2/ddns-go/issues</Support>
+    <Project>https://github.com/jeessy2/ddns-go</Project>
+    <Overview>ddns-go</Overview>
+    <Description>
+        自动获得你的公网 IPv4 或 IPv6 地址，并解析到对应的域名服务。
+    </Description>
+    <WebUI>http://[IP]:[PORT:9278]/vnc.html?autoconnect=true</WebUI>
+    <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/Docker/ddns</HostDir>
+            <ContainerDir>/root</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Environment>
+        <Variable>
+            <Value>99</Value>
+            <Name>PUID</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>100</Value>
+            <Name>PGID</Name>
+            <Mode/>
+        </Variable>
+    </Environment>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>9278</HostPort>
+                <ContainerPort>9876</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+</Container>
