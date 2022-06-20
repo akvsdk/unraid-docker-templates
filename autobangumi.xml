@@ -19,14 +19,14 @@
   <Config Name="RSS 订阅地址" Target="AB_RSS" Default="https://mikanani.me/RSS/MyBangumi?token=2hLNFtllOHSTM7NPqBltsg%3d%3d" 
     Mode="" Description="运行容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
-   <Config Name="下载路径" Target="AB_DOWNLOAD_PATH" Default="/mnt/user/nas/qb" 
+   <Config Name="qBittorrent 中的下载路径" Target="AB_DOWNLOAD_PATH" Default="/Downloads" 
     Mode="" Description="该目录将映射到容器中的/downloads" Type="Variable" 
-    Display="always" Required="false" Mask="false">/mnt/user/nas/qb</Config>
+    Display="always" Required="false" Mask="false">/Downloads</Config>
   <Config Name="qBittorrent的地址和端口号" Target="AB_DOWNLOADER_HOST" Default="qbittorrent:8080" 
-    Mode=""  Type="Variable"
-    Display="advanced" Required="false" Mask="false"></Config>
-  <Config Name="过滤不需要剧集关键字" Target="AB_NOT_CONTAIN" Default="720|繁体|CHT|JPTC|繁日" 
-    Mode=""  Type="Variable"
+    Mode=""  Type="Variable"  Display="advanced" Required="false" Mask="false">
+  </Config>
+  <Config Name="过滤不需要剧集关键字" Target="AB_NOT_CONTAIN" Default="繁|720|CHT|JPTC" 
+    Mode=""  Type="Variable" Description="排除的字符(支持正则表达式)"
     Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="时区" Target="TZ" Default="Asia/Shanghai" 
     Mode=""  Type="Variable"

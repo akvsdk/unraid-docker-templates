@@ -11,7 +11,7 @@
     <Description>
         阿里云webdav客户端的docker镜像
     </Description>
-    <Icon>https://pan.baidu.com/m-static/base/static/images/favicon.ico</Icon>
+    <Icon>https://files.catbox.moe/3c82ad.jpeg</Icon>
     <Data>
         <Volume>
             <HostDir>/mnt/user/Docker/aliyundrive-webdav</HostDir>
@@ -21,13 +21,21 @@
     </Data>
     <Environment>
         <Variable>
+            <Value>5c0e638a92ee4f80805f0aa83f497763</Value>
+            <Name>REFRESH_TOKEN</Name>
+            <Description>阿里云盘Token</Description>
+            <Mode/>
+        </Variable>
+        <Variable>
             <Value>J1ang</Value>
             <Name>WEBDAV_AUTH_USER</Name>
+            <Description>webdav用户名</Description>
             <Mode/>
         </Variable>
         <Variable>
             <Value>66351579</Value>
             <Name>WEBDAV_AUTH_PASSWORD</Name>
+             <Description>webdav密码</Description>
             <Mode/>
         </Variable>
         <Variable>
@@ -45,8 +53,8 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>6082</HostPort>
-                <ContainerPort>6080</ContainerPort>
+                <HostPort>5223</HostPort>
+                <ContainerPort>8080</ContainerPort>
                 <Protocol>tcp</Protocol>
             </Port>
         </Publish>
