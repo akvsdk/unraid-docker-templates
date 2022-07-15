@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
     <Name>zfile</Name>
-    <Repository>docker.mirrors.ustc.edu.cn/zhaojun1998/zfile</Repository>
+    <Repository>zhaojun1998/zfile</Repository>
     <Registry>https://hub.docker.com/r/zhaojun1998/zfile</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>
@@ -42,7 +42,7 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>9266</HostPort>
+                <HostPort>9277</HostPort>
                 <ContainerPort>8080</ContainerPort>
                 <Protocol>tcp</Protocol>
                 <Description>zfile web ui</Description>
