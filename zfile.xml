@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
     <Name>zfile</Name>
-    <Repository>zhaojun1998/zfile</Repository>
+    <Repository>fvfhkyzu.mirror.aliyuncs.com/zhaojun1998/zfile</Repository>
     <Registry>https://hub.docker.com/r/zhaojun1998/zfile</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>
