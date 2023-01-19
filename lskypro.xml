@@ -13,10 +13,10 @@
   <Overview>
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
-  <Registry>https://hub.docker.com/r/halcyonazure/lsky-pro-docker:latest</Registry>
+  <Registry>https://hub.docker.com/r/dko0/lsky-pro:latest</Registry>
   <GitHub>https://github.com/Alist/Alist</GitHub>
-  <Repository>halcyonazure/lsky-pro-docker:latest</Repository>
-  <Project>https://github.com/halcyonazure/lsky-pro-docker</Project>
+  <Repository>dko0/lsky-pro:latest</Repository>
+  <Project>https://github.com/dko0/lsky-pro</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network>bridge</Network>
