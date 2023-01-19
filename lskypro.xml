@@ -30,6 +30,20 @@
   <Config Name="图床目录" Target="/var/www/html/image" Default="" 
     Mode="rw" Description="该目录将映射到容器中的/var/www/html/image，图片文件存放目录" Type="Path" 
     Display="always" Required="false" Mask="false">/mnt/disk1/nas/lsky</Config>
+
+ <Config Name="db_host" Target="MYSQL_DATABASE" Default="mariadb" 
+    Mode=""  Description="设置数据库主机" Type="Variable"
+    Display="advanced" Required="false" Mask="false">mariadb</Config>
+  <Config Name="db_username" Target="MYSQL_USER" Default="root" 
+    Mode="" Description="设置数据库用户名"  Type="Variable"
+    Display="advanced" Required="false" Mask="false">root</Config>
+  <Config Name="db_pwd" Description="设置数据库密码"  Target="MYSQL_PASSWORD" Default="" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="db_name" Target="MYSQL_DATABASE" Default="koel" 
+    Mode="" Description="设置数据库名称" Type="Variable"
+    Display="advanced" Required="false" Mask="false">lsky</Config>
+    
   <Config Name="用户 ID" Target="PUID" Default="" 
     Mode="" Description="运行 lskypro 容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false">0</Config>
