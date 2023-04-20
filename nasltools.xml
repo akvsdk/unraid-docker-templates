@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container>
+    <Name>nas-tools</Name>
+    <Repository>jxxghp/nas-tools</Repository>
+    <Registry>https://hub.docker.com/r/jxxghp/nas-tools</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://t.me/NAStool_wiki</Support>
+    <Project>https://github.com/NAStool/nas-tools</Project>
+    <Overview>nas-tools</Overview>
+    <Description>
+        NAS媒体库管理工具
+    </Description>
+    <Shell>bash</Shell>
+    <WebUI>http://[IP]:[PORT:5246]/vnc.html?autoconnect=true</WebUI>
+    <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/disk1/nas/tools</HostDir>
+            <ContainerDir>/media</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/Docker/nas-tools</HostDir>
+            <ContainerDir>/config</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Config Name="自动升级程序" Target="NASTOOL_AUTO_UPDATE" Default="false" 
+        Mode="" Description="启动容器时自动升级程序" Type="Variable"
+        Display="advanced" Required="false" Mask="false">false</Config>
+    <Config Name="使用国内源" Target="NASTOOL_CN_UPDATE" Default="false" 
+        Mode="" Description="国内源升级" Type="Variable"
+        Display="advanced" Required="false" Mask="false">false</Config>
+    <Environment>
+        <Variable>
+            <Value>99</Value>
+            <Name>PUID</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>100</Value>
+            <Name>PGID</Name>
+            <Mode/>
+        </Variable>
+        <Variable>
+            <Value>022</Value>
+            <Name>UMASK</Name>
+            <Mode/>
+        </Variable>
+    </Environment>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>5246</HostPort>
+                <ContainerPort>3000</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+</Container>
