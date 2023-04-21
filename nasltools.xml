@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <Container>
     <Name>nas-tools</Name>
-    <Repository>nastools/nas-tools</Repository>
+    <Repository>desmond1626/nas-tools:2.9.1</Repository>
     <Registry>https://hub.docker.com/r/nastools/nas-tools</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <Support>https://t.me/NAStool_wiki</Support>
-    <Project>https://github.com/NAStool/nas-tools</Project>
+    <Project>https://github.com/desmond1626/nas-tools-2.9.1</Project>
     <Overview>nas-tools</Overview>
     <Description>
         NAS媒体库管理工具
     </Description>
     <Shell>bash</Shell>
-    <WebUI>http://[IP]:[PORT:5246]/vnc.html?autoconnect=true</WebUI>
+    <WebUI>http://[IP]:[PORT:5246]</WebUI>
     <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
     <Data>
         <Volume>
@@ -60,3 +60,4 @@
         </Publish>
     </Networking>
 </Container>
+x
