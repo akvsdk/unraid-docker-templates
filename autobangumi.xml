@@ -37,6 +37,15 @@
   <Config Name="qBittorrent的登录密码" Target="AB_DOWNLOADER_PASSWORD" Default="adminadmin" 
     Mode=""  Type="Variable"
     Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Web API" Target="AB_WEBUI_PORT" Default="7892" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="启动 TMDB 解析" Target="AB_LANGUAGE" Default="False" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false">True</Config>
+  <Config Name="选择语言" Target="AB_ENABLE_TMDB" Default="zh" 
+    Mode=""  Type="Variable"
+    Display="advanced" Required="false" Mask="false">zh</Config>
   <Config Name="用户 ID" Target="PUID" Default="99" 
     Mode="" Description="运行容器的用户" Type="Variable"
     Display="advanced" Required="false" Mask="false">99</Config>
